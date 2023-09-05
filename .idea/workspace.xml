@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c378bfe-26a8-4ef9-8586-ec5c9da0577e" name="Changes" comment="'HW_1'">
-      <change afterPath="$PROJECT_DIR$/HM_2/task01_16.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HM_2/task02_drob.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_2/task01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_2/task02_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_2/task04_cirkle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_2/task06_bank.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_2/Семинар 2. Погружение в Python. Простые типы данных.pdf" afterDir="false" />
+    <list default="true" id="5c378bfe-26a8-4ef9-8586-ec5c9da0577e" name="Changes" comment="'HW_2'">
+      <change afterPath="$PROJECT_DIR$/Lesson_3/task01_set.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/task03_control_type.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/task03_tuple.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/task04_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/task05_numer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/task06.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/task07_str.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HM_2/task01_16.py" beforeDir="false" afterPath="$PROJECT_DIR$/HM_2/task01_16.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HM_2/task02_drob.py" beforeDir="false" afterPath="$PROJECT_DIR$/HM_2/task02_drob.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693553163506</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="'HW_2'">
+      <created>1693724366777</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693724366777</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,6 +117,7 @@
     <MESSAGE value="&quot;Lesson1&quot;" />
     <MESSAGE value="&quot;HW_1&quot;" />
     <MESSAGE value="'HW_1'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'HW_1'" />
+    <MESSAGE value="'HW_2'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'HW_2'" />
   </component>
 </project>

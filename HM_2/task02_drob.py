@@ -3,7 +3,7 @@
 import fractions
 from decimal import Decimal
 
-a, b, c, d = 2, 50, 0, -75550
+a, b, c, d = -25555, 500, 5862, -75550
 
 list_common_divisors_numerator = []
 list_common_divisors_denominator = []
@@ -165,3 +165,8 @@ else:
         print(f'{abs(a)}/{abs(b)}' if b != 1 else f'{a}', '- произведение* дробей')
     elif a == 0:
         print(f'{a}', '- произведение* дробей' )
+
+my_list = [20, 40]
+a5, b5 = my_list
+a5, b5 = b5, a5 % b5
+print(a5, b5)
