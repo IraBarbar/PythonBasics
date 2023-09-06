@@ -22,7 +22,6 @@ dict_option = {}
 set_ = set()
 res = 0
 i = 1
-
 data = list(dict_things.items())
 
 while COUNT_:
@@ -32,7 +31,7 @@ while COUNT_:
         if res + int(item[1]) <= WEIGHT:
             res += item[1]
             set_.add(item)
-        sorted(set_, key=len)
+        
     if i > 1:
         for j in range(1, i):
             if set(dict_option.get(i)) == set(dict_option.get(j)):
