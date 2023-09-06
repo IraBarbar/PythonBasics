@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c378bfe-26a8-4ef9-8586-ec5c9da0577e" name="Changes" comment="'HW_2'">
-      <change afterPath="$PROJECT_DIR$/Lesson_3/task01_set.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_3/task03_control_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_3/task03_tuple.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_3/task04_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_3/task05_numer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_3/task06.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_3/task07_str.py" afterDir="false" />
+    <list default="true" id="5c378bfe-26a8-4ef9-8586-ec5c9da0577e" name="Changes" comment="'Seminar_3'">
+      <change afterPath="$PROJECT_DIR$/HW_3/task01_friends.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW_3/task02_double.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW_3/task03_sorted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW_3/task04_massa.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HM_2/task01_16.py" beforeDir="false" afterPath="$PROJECT_DIR$/HM_2/task01_16.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HM_2/task02_drob.py" beforeDir="false" afterPath="$PROJECT_DIR$/HM_2/task02_drob.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693724366777</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="'Seminar_3'">
+      <created>1693943185581</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693943185581</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +120,7 @@
     <MESSAGE value="&quot;HW_1&quot;" />
     <MESSAGE value="'HW_1'" />
     <MESSAGE value="'HW_2'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'HW_2'" />
+    <MESSAGE value="'Seminar_3'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'Seminar_3'" />
   </component>
 </project>
