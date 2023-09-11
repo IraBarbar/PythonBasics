@@ -22,3 +22,4 @@ def dict_args(a=20, b='ser', c=(1, 2), d=str([1, 2]), t=str({'Python': 3.1}), h=
 my_dict = dict_args()
 for i, j in my_dict.items():
     print(f'{str(i):<95}: {j}')
+
