@@ -18,8 +18,7 @@ def dict_args(a=20, b='ser', c=(1, 2), d=str([1, 2]), t=str({'Python': 3.1}), h=
             dict_[val] = key
     return dict_
 
+
 my_dict = dict_args()
-for key, val in my_dict.items():
-    print(f'{str(key):<95}: {val}')
-
-
+for i, j in my_dict.items():
+    print(f'{str(i):<95}: {j}')
