@@ -2,7 +2,6 @@
 # Определите какие вещи влезут в рюкзак передав его максимальную грузоподъёмность.
 # Достаточно вернуть один допустимый вариант. *Верните все возможные варианты комплектации рюкзака.
 from random import sample
-from pprint import pp
 import math
 # максимальный вес:
 WEIGHT = 15
@@ -11,9 +10,10 @@ dict_things = {
     'чайник': 2,
     'плед': 7,
     "вода": 5,
-    "полатка": 10,
+    "полатка": 11,
     "консерва": 2,
     'розжиг': 4,
+    'фонарик': 3,
 }
 # возможное количество сочетаний:
 COUNT_ = math.factorial(len(dict_things))
@@ -34,7 +34,7 @@ while COUNT_:
         
     if i > 1:
         for j in range(1, i):
-            if set(dict_option.get(i)) == set(dict_option.get(j)):
+            if dict_option.get(i) == dict_option.get(j):
                 dict_option.pop(i)
                 i -= 1
                 break
@@ -45,4 +45,5 @@ while COUNT_:
 
 
 for key, val in dict_option.items():
-    print(f'{key:<4}: {val}')
+    print(f'{key:<3}: {str(sorted(val)):<70} = {sum([sorted(val)[i][1] for i in range(len(sorted(val)))])} ')
+
