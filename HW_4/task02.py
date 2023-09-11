@@ -5,21 +5,21 @@
 from pprint import pp
 
 
-def dict_meen(*args, g=None) -> dict:
+def dict_args(a=20, b='ser', c=(1, 2), d=str([1, 2]), t=str({'Python': 3.1}), h=25.2, l=5) -> dict:
     """Возвращающую словарь, где ключ — значение
     # переданного аргумента, а значение — имя аргумента."""
 
-    if g is None:
-        g = globals()
     dict_ = {}
-    for item in args:
-        if isinstance(item, list | dict | frozenset | bytearray):
-            dict_[(str(item))] = [n for n in g if id(g[n]) == id(item)]
+    for key, val in locals().items():
+        if isinstance(val, list | dict | frozenset | bytearray):
+            dict_[(str(val))] = key
+
         else:
-            dict_[item] = [n for n in g if id(g[n]) == id(item)]
+            dict_[val] = key
     return dict_
 
-
-my_dict = (dict_meen(a := 20, b := 'ser', c := (1, 2), d := [1, 2], t := {'Python': 3.1}, h := 25.2, l := 5))
+my_dict = dict_args()
 for key, val in my_dict.items():
-    print(f'{str(key):>15}: {str(*val):>2}')
+    print(f'{str(key):<95}: {val}')
+
+
