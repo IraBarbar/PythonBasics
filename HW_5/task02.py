@@ -7,14 +7,14 @@
 
 lst_names = ['Ivan', 'Ira', 'Platon']
 lst_bid = [100, 200, 300]
-lst_bonus_pr = ['10%', '10%', '10%']
+lst_bonus_pr = ['10.10%', '10.10%', '10.10%']
 
 
 gen_dict_bonus = {key: val for key, val in
                   zip(lst_names,
-                      [num2 * num1 // 100 for num1, num2 in
+                      [num2 * num1 / 100 for num1, num2 in
                        zip(lst_bid,
-                           list(map(lambda x: int(x[:-1]), lst_bonus_pr)))])}
+                           list(map(lambda x: float(x[:-1]), lst_bonus_pr)))])}
 
 for k, v in gen_dict_bonus.items():
     print(f'{k:{len(max(gen_dict_bonus))}} : {v}')
