@@ -1,6 +1,6 @@
 # Напишите функцию для транспонирования матрицы
 
-def transposition_matrix(lst: list):
+def transposition_matrix(lst: list) -> list:
     """ Вывод транспонирования матрицы."""
 
     lst_temp = []
@@ -13,7 +13,7 @@ def transposition_matrix(lst: list):
     return lst_position
 
 
-lst_matrix = [[1, 2, 3, 4, 5], [11, 21, 31, 41, 51]]
+lst_matrix = [[1, 2, 3, 4, 5], [11, 21, 31, 41, 51], [2, 5, 8, 8, 10]]
 for item in lst_matrix:
     print(item)
 print('*' * 10)
