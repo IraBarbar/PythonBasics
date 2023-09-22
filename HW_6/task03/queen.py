@@ -60,15 +60,15 @@ def lst_queens_is_true():
 
 
 def show_queens():
-    lsts = lst_queens_is_true()
 
+    lsts = lst_queens_is_true()
     for lst in lsts:
         print(lst)
         for i in range(1, 9):
             l1 = []
             for j in range(1, 9):
                 if [i, j] in lst:
-                    l1.append('0')
+                    l1.append('Q')
                 else:
                     l1.append('*')
             print(*l1)
