@@ -23,6 +23,5 @@ def gen_simple_nums(count_simple_nums: int) -> list:
     yield sorted(lst_nums)
 
 
-for k in gen_simple_nums(200):
-    print(k)
+print(*gen_simple_nums(30))
 
