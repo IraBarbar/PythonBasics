@@ -5,7 +5,8 @@
 # Программа получает на вход восемь пар чисел, каждое число от 1 до 8 - координаты 8 ферзей.
 # Если ферзи не бьют друг друга верните истину, а если бьют - ложь.
 import random
-COUNT_QUEENS = 8   # количество ферзей на доске
+COUNT_QUEENS = 8   # количество ферзей на доскеc
+COUNT_WIN_SHOW = 4  # КАКОЕ КОЛИЧЕСТВО  ВЫИГРЫШНЫХ КОМБИНАЦИЙ ПОКАЗАТЬ
 
 
 def lst_queens():
@@ -51,7 +52,7 @@ def test_queen(lst_1: list) -> bool:
 
 def lst_queens_is_true():
     lst = []
-    while len(lst) < 4:
+    while len(lst) < COUNT_WIN_SHOW:
         temp = lst_queens()
         if test_queen(temp) == True:
             lst.append(sorted(temp))
@@ -60,7 +61,6 @@ def lst_queens_is_true():
 
 
 def show_queens():
-
     lsts = lst_queens_is_true()
     for lst in lsts:
         print(*lst)
