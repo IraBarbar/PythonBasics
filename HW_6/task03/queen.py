@@ -33,7 +33,7 @@ def lst_queens():
 def test_queen(lst_1: list) -> bool:
     """Если ферзи не бьют друг друга верните истину, а если бьют - ложь."""
 
-    sorted(lst_1)
+    lst_1 = sorted(lst_1)
     for k1 in range(COUNT_QUEENS - 1):
         for m2 in range(k1+1, COUNT_QUEENS):
             if lst_1[k1][1] == lst_1[m2][1] or lst_1[k1][0] == lst_1[m2][0]:
@@ -49,14 +49,32 @@ def test_queen(lst_1: list) -> bool:
     return True
 
 
-def show_queens():
+def lst_queens_is_true():
     lst = []
     while len(lst) < 4:
         temp = lst_queens()
         if test_queen(temp) == True:
             lst.append(sorted(temp))
         temp = []
-    for k in lst:
-        print(k)
+    return lst
+
+
+def show_queens():
+    lsts = lst_queens_is_true()
+
+    for lst in lsts:
+        print(lst)
+        for i in range(1, 9):
+            l1 = []
+            for j in range(1, 9):
+                if [i, j] in lst:
+                    l1.append('0')
+                else:
+                    l1.append('*')
+            print(*l1)
+        print()
+
+
+
 
 
