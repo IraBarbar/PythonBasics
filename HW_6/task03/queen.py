@@ -34,12 +34,12 @@ def test_queen(lst_1: list) -> bool:
     """Если ферзи не бьют друг друга верните истину, а если бьют - ложь."""
 
     lst_1 = sorted(lst_1)
-    for k1 in range(COUNT_QUEENS - 1):
+    for k1 in range(COUNT_QUEENS):
         for m2 in range(k1+1, COUNT_QUEENS):
             if lst_1[k1][1] == lst_1[m2][1] or lst_1[k1][0] == lst_1[m2][0]:
                 return False
-    for kd in range(COUNT_QUEENS - 1):
-        for md in range(1, 9):
+    for kd in range(COUNT_QUEENS):
+        for md in range(1, 8):
             if [lst_1[kd][0] + md, lst_1[kd][1] - md] in lst_1:
                 # print(f'{[lst_1[kd][0] , lst_1[kd][1]]} бъет {[lst_1[kd][0]+md, lst_1[kd][1]-md]}')
                 return False
@@ -63,7 +63,7 @@ def show_queens():
 
     lsts = lst_queens_is_true()
     for lst in lsts:
-        print(lst)
+        print(*lst)
         for i in range(1, 9):
             l1 = []
             for j in range(1, 9):
