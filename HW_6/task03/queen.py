@@ -6,7 +6,7 @@
 # Если ферзи не бьют друг друга верните истину, а если бьют - ложь.
 import random
 COUNT_QUEENS = 8   # количество ферзей на доскеc
-COUNT_WIN_SHOW = 4  # КАКОЕ КОЛИЧЕСТВО  ВЫИГРЫШНЫХ КОМБИНАЦИЙ ПОКАЗАТЬ
+COUNT_WIN_SHOW = 4 # КАКОЕ КОЛИЧЕСТВО  ВЫИГРЫШНЫХ КОМБИНАЦИЙ ПОКАЗАТЬ
 
 
 def lst_queens():
@@ -54,16 +54,16 @@ def lst_queens_is_true():
     lst = []
     while len(lst) < COUNT_WIN_SHOW:
         temp = lst_queens()
-        if test_queen(temp) == True:
+        if test_queen(temp):
             lst.append(sorted(temp))
         temp = []
     return lst
 
 
 def show_queens():
-    lsts = lst_queens_is_true()
-    for lst in lsts:
-        print(*lst)
+    lists = lst_queens_is_true()
+    for i, lst in enumerate(lists, 1):
+        print(i, '. ', lst)
         for i in range(1, 9):
             l1 = []
             for j in range(1, 9):
@@ -71,8 +71,11 @@ def show_queens():
                     l1.append('Q')
                 else:
                     l1.append('*')
-            print(*l1)
+            print('\t', *l1)
         print()
+
+
+
 
 
 

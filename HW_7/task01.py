@@ -10,7 +10,6 @@
 # 3.Соберите из созданных на уроке и в рамках домашнего задания функций пакет для работы с файлами.
 
 import os
-import shutil
 from pathlib import Path
 
 
@@ -33,11 +32,9 @@ def rename_files(new_file_: str,  py_new, cnt: int, count_int: int, new_element=
 
     """Цикл переименования"""
     for i in range(cnt):
-        j = i+1
-        while len(str(j)) < count_int:
-            j = '0' + str(j)
+        j = str(i).zfill(count_int)
         p = Path(f'{old_names[i]}{old_element}{old_nums[i]}.{pys_old[i]}')
         print(p.rename(f'{new_file_}{new_element}{j}.{py_new}'))
 
 
-rename_files('new', 'txt', 20, 5)
+rename_files('old', 'txt', 20, 15)
