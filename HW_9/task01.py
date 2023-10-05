@@ -20,25 +20,28 @@ pp = Path(Path().cwd())
 
 def gen_random_nums_csv():
     name = 'random_a_b_c.csv'
+
+    """Генерируем случайные числа в файл:"""
+    with open(pp/name, 'w', newline='', encoding='utf-8') as f_write:
+        csv_write = csv.DictWriter(f_write, fieldnames=['a', 'b', 'c'], dialect='excel-tab', quoting=csv.QUOTE_NONNUMERIC)
+        dict_row = {}
+        for _ in range(random.randint(100, 1000)):
+            dict_row['a'] = round(random.uniform(-100, 100), 2)
+            dict_row['b'] = round(random.uniform(-100, 100), 2)
+            dict_row['c'] = round(random.uniform(-100, 100), 2)
+            csv_write.writerow(dict_row)
+
+    """Считываем из файла:"""
     if os.path.exists(name):
         with open(pp/name, 'r', newline='') as f:
             csv_file: Iterator[dict] = csv.DictReader(f, fieldnames=['a', 'b', 'c'], dialect='excel-tab',
                                                       quoting=csv.QUOTE_NONNUMERIC)
             all_data = []
-            for i, dict_row in enumerate(csv_file):
-                if i != 0:
-                    all_data.append(dict_row)
+            for dict_row in csv_file:
+                all_data.append(dict_row)
     else:
         all_data = []
 
-    with open(pp/name, 'w', newline='', encoding='utf-8') as f_write:
-        csv_write = csv.DictWriter(f_write, fieldnames=['a', 'b', 'c'], dialect='excel-tab', quoting=csv.QUOTE_NONNUMERIC)
-        dict_row = {}
-        for i in range(random.randint(100, 1000)):
-            dict_row['a'] = round(random.uniform(-100, 100), 2)
-            dict_row['b'] = round(random.uniform(-100, 100), 2)
-            dict_row['c'] = round(random.uniform(-100, 100), 2)
-            csv_write.writerow(dict_row)
     return all_data
 
 
@@ -84,7 +87,7 @@ def square_leveling(a: float = 1, b: float = 1, c: float = 1) -> float:
     return res
 
 
-for i in square_leveling(2, 30, 5):
+for i in square_leveling(2,2,3):
     print(i)
 
 
